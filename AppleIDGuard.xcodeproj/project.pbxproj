@@ -1,0 +1,515 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		015BDDA8401B619E4F530DAA /* RiskEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFDEC31403180692AD26A08 /* RiskEngine.swift */; };
+		04CD23155D403BA13E432D82 /* AlertsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B3DA5BF28442C8960E5474 /* AlertsView.swift */; };
+		0AA3C0B8EAD8ADBD708DA581 /* AppGroupConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561E74EF0CFF6D123AAE02BD /* AppGroupConstants.swift */; };
+		127EED6107BA7E7258D64969 /* BackgroundScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14ADF4E3CFFA5A1CC7AED14 /* BackgroundScheduler.swift */; };
+		18B99AD522F35AE112F1AA49 /* UniformTypeIdentifiers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9403707C3E571107156DED8 /* UniformTypeIdentifiers.framework */; };
+		330D0FAB153BA7BAC8FEB7FB /* GuardModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080713E9586F689A88A684DA /* GuardModels.swift */; };
+		3A94CA4742A0162D89773944 /* ReceiptParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE17BD5A6A1BB8D1E605976 /* ReceiptParser.swift */; };
+		4013E14B32C7FF23DB4FC602 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9189703A72E31CB736327E3 /* NotificationService.swift */; };
+		5AE4BEB92568EA976924769E /* AppleIDGuardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CD66E7CA07CD27C2D3AFCC /* AppleIDGuardApp.swift */; };
+		614A401805291D314051F6CF /* AppGroupConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561E74EF0CFF6D123AAE02BD /* AppGroupConstants.swift */; };
+		668056540F7AB098A50425BE /* BaselineLearner.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9772E810F5DB7AC0E5FC9B0 /* BaselineLearner.swift */; };
+		7279BEFCA2D9C28A814F3B2A /* ReceiptParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE17BD5A6A1BB8D1E605976 /* ReceiptParser.swift */; };
+		870E9798563C6E57595729F7 /* ReceiptIngestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB4C0D3E6103878A51A8B8E /* ReceiptIngestService.swift */; };
+		9269D675B04D884F1B9034E2 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14F708EE728E149FE3FA913A /* UserNotifications.framework */; };
+		958AD64195C7343C08C370C6 /* ImportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640F6D516E3E3A4BAADD7FAD /* ImportView.swift */; };
+		970400C6D38E9916093ADFA2 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2973FC7E08DEB07C8B951DC /* ShareViewController.swift */; };
+		98C9E49D4E9F89A31050D82C /* GuardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045E00AB53CB3C662F214E48 /* GuardViewModel.swift */; };
+		998072FFB3368F01EE69DC19 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 475ED01CA3FBB4D7B704014C /* Foundation.framework */; };
+		9B76D304E3604667EC2512CE /* SharePayloadExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BD8ABC73FB29B514610487 /* SharePayloadExtractor.swift */; };
+		9B9226A53B74336B722C0422 /* BaselineLearner.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9772E810F5DB7AC0E5FC9B0 /* BaselineLearner.swift */; };
+		9E18710A95370C5D8C9FC5D0 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A4251AE430C09B1734FCDB /* DashboardView.swift */; };
+		9E7FB3C333288226C609B9E6 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3A06BD82115D60BD929E21 /* SettingsView.swift */; };
+		A5595B92D39C5A9F1570A1A0 /* PurchaseStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73946A62920E6E7F60B8C7D8 /* PurchaseStore.swift */; };
+		C06481698C567336DBF31C63 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1939A7BEEC014CD8D2DF0577 /* UIKit.framework */; };
+		CA0D6C457F1553DEBEA17613 /* PurchaseStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73946A62920E6E7F60B8C7D8 /* PurchaseStore.swift */; };
+		D50B1747B859C60C89118348 /* ReceiptIngestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB4C0D3E6103878A51A8B8E /* ReceiptIngestService.swift */; };
+		D90B7661067C206285EE7E27 /* RiskEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFDEC31403180692AD26A08 /* RiskEngine.swift */; };
+		DFA1A40B09E3B9B872320448 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9189703A72E31CB736327E3 /* NotificationService.swift */; };
+		F030A51BD2A7A660B21774DB /* GuardModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080713E9586F689A88A684DA /* GuardModels.swift */; };
+		F0525CFAB6376BC74D7D3511 /* SharePayloadExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BD8ABC73FB29B514610487 /* SharePayloadExtractor.swift */; };
+		F6214F75AADE3ECCBBD5AC6B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D25852DE6B944126EC1DBFB /* ContentView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		01B3DA5BF28442C8960E5474 /* AlertsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertsView.swift; sourceTree = "<group>"; };
+		045E00AB53CB3C662F214E48 /* GuardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuardViewModel.swift; sourceTree = "<group>"; };
+		080713E9586F689A88A684DA /* GuardModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuardModels.swift; sourceTree = "<group>"; };
+		0B3A06BD82115D60BD929E21 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		14F708EE728E149FE3FA913A /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		1939A7BEEC014CD8D2DF0577 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		19A4251AE430C09B1734FCDB /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		20CD66E7CA07CD27C2D3AFCC /* AppleIDGuardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleIDGuardApp.swift; sourceTree = "<group>"; };
+		3CFDEC31403180692AD26A08 /* RiskEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiskEngine.swift; sourceTree = "<group>"; };
+		475ED01CA3FBB4D7B704014C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		561E74EF0CFF6D123AAE02BD /* AppGroupConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGroupConstants.swift; sourceTree = "<group>"; };
+		640F6D516E3E3A4BAADD7FAD /* ImportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportView.swift; sourceTree = "<group>"; };
+		6D25852DE6B944126EC1DBFB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		73946A62920E6E7F60B8C7D8 /* PurchaseStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseStore.swift; sourceTree = "<group>"; };
+		74B95FD9361E527ACFECEB30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		A9403707C3E571107156DED8 /* UniformTypeIdentifiers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UniformTypeIdentifiers.framework; path = System/Library/Frameworks/UniformTypeIdentifiers.framework; sourceTree = SDKROOT; };
+		B2973FC7E08DEB07C8B951DC /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		BDE17BD5A6A1BB8D1E605976 /* ReceiptParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptParser.swift; sourceTree = "<group>"; };
+		D02EC7E5F4F37D465411DDC8 /* AppleIDGuardShare.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = AppleIDGuardShare.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D14ADF4E3CFFA5A1CC7AED14 /* BackgroundScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundScheduler.swift; sourceTree = "<group>"; };
+		F2522E5668F4CA366C60A77F /* AppleIDGuard.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = AppleIDGuard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2BD8ABC73FB29B514610487 /* SharePayloadExtractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharePayloadExtractor.swift; sourceTree = "<group>"; };
+		F9189703A72E31CB736327E3 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		F9772E810F5DB7AC0E5FC9B0 /* BaselineLearner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaselineLearner.swift; sourceTree = "<group>"; };
+		FDB4C0D3E6103878A51A8B8E /* ReceiptIngestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptIngestService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5E825F170E270E8E250BAD2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				998072FFB3368F01EE69DC19 /* Foundation.framework in Frameworks */,
+				C06481698C567336DBF31C63 /* UIKit.framework in Frameworks */,
+				18B99AD522F35AE112F1AA49 /* UniformTypeIdentifiers.framework in Frameworks */,
+				9269D675B04D884F1B9034E2 /* UserNotifications.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0EBF3A64A9E2EA0FEE4DA3E6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				080713E9586F689A88A684DA /* GuardModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		23F3526328D45C42ACA7C5FF /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				F9772E810F5DB7AC0E5FC9B0 /* BaselineLearner.swift */,
+				BDE17BD5A6A1BB8D1E605976 /* ReceiptParser.swift */,
+				3CFDEC31403180692AD26A08 /* RiskEngine.swift */,
+			);
+			path = Engine;
+			sourceTree = "<group>";
+		};
+		4D32B8C8574DED36D037D347 /* AppleIDGuard */ = {
+			isa = PBXGroup;
+			children = (
+				20CD66E7CA07CD27C2D3AFCC /* AppleIDGuardApp.swift */,
+				23F3526328D45C42ACA7C5FF /* Engine */,
+				0EBF3A64A9E2EA0FEE4DA3E6 /* Models */,
+				7979DD24472B2CDBA5F469D9 /* Services */,
+				F81EDF148F2F79B29CFD1315 /* Views */,
+			);
+			name = AppleIDGuard;
+			path = Sources/AppleIDGuard;
+			sourceTree = "<group>";
+		};
+		5D032C85C1A177D4A3E36E27 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F2522E5668F4CA366C60A77F /* AppleIDGuard.app */,
+				D02EC7E5F4F37D465411DDC8 /* AppleIDGuardShare.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7979DD24472B2CDBA5F469D9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				561E74EF0CFF6D123AAE02BD /* AppGroupConstants.swift */,
+				D14ADF4E3CFFA5A1CC7AED14 /* BackgroundScheduler.swift */,
+				045E00AB53CB3C662F214E48 /* GuardViewModel.swift */,
+				F9189703A72E31CB736327E3 /* NotificationService.swift */,
+				73946A62920E6E7F60B8C7D8 /* PurchaseStore.swift */,
+				FDB4C0D3E6103878A51A8B8E /* ReceiptIngestService.swift */,
+				F2BD8ABC73FB29B514610487 /* SharePayloadExtractor.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		9061AA1B9F21398190591EBF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				475ED01CA3FBB4D7B704014C /* Foundation.framework */,
+				1939A7BEEC014CD8D2DF0577 /* UIKit.framework */,
+				A9403707C3E571107156DED8 /* UniformTypeIdentifiers.framework */,
+				14F708EE728E149FE3FA913A /* UserNotifications.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DBBFB674A2538039C6028A26 = {
+			isa = PBXGroup;
+			children = (
+				4D32B8C8574DED36D037D347 /* AppleIDGuard */,
+				E7F19093B7C010331C94A2FC /* ShareExtension */,
+				9061AA1B9F21398190591EBF /* Frameworks */,
+				5D032C85C1A177D4A3E36E27 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E7F19093B7C010331C94A2FC /* ShareExtension */ = {
+			isa = PBXGroup;
+			children = (
+				74B95FD9361E527ACFECEB30 /* Info.plist */,
+				B2973FC7E08DEB07C8B951DC /* ShareViewController.swift */,
+			);
+			name = ShareExtension;
+			path = Sources/ShareExtension;
+			sourceTree = "<group>";
+		};
+		F81EDF148F2F79B29CFD1315 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				01B3DA5BF28442C8960E5474 /* AlertsView.swift */,
+				6D25852DE6B944126EC1DBFB /* ContentView.swift */,
+				19A4251AE430C09B1734FCDB /* DashboardView.swift */,
+				640F6D516E3E3A4BAADD7FAD /* ImportView.swift */,
+				0B3A06BD82115D60BD929E21 /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2902E306C853290C57107B35 /* AppleIDGuardShare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 250B4C13D78A5C2BF7F0FFAE /* Build configuration list for PBXNativeTarget "AppleIDGuardShare" */;
+			buildPhases = (
+				C8D7C4613A71F27A681B1EB2 /* Sources */,
+				5E825F170E270E8E250BAD2B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AppleIDGuardShare;
+			packageProductDependencies = (
+			);
+			productName = AppleIDGuardShare;
+			productReference = D02EC7E5F4F37D465411DDC8 /* AppleIDGuardShare.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		5FCE8ACD536EF29CA70EBE34 /* AppleIDGuard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0CE4FE337223A54DB1071CF9 /* Build configuration list for PBXNativeTarget "AppleIDGuard" */;
+			buildPhases = (
+				4B338BE854FB348ECF8A3CE3 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AppleIDGuard;
+			packageProductDependencies = (
+			);
+			productName = AppleIDGuard;
+			productReference = F2522E5668F4CA366C60A77F /* AppleIDGuard.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F3BE4313E06570A616CCB867 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = 73B0DA72C46C8EC79650C04D /* Build configuration list for PBXProject "AppleIDGuard" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = DBBFB674A2538039C6028A26;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 5D032C85C1A177D4A3E36E27 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5FCE8ACD536EF29CA70EBE34 /* AppleIDGuard */,
+				2902E306C853290C57107B35 /* AppleIDGuardShare */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4B338BE854FB348ECF8A3CE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04CD23155D403BA13E432D82 /* AlertsView.swift in Sources */,
+				0AA3C0B8EAD8ADBD708DA581 /* AppGroupConstants.swift in Sources */,
+				5AE4BEB92568EA976924769E /* AppleIDGuardApp.swift in Sources */,
+				127EED6107BA7E7258D64969 /* BackgroundScheduler.swift in Sources */,
+				668056540F7AB098A50425BE /* BaselineLearner.swift in Sources */,
+				F6214F75AADE3ECCBBD5AC6B /* ContentView.swift in Sources */,
+				9E18710A95370C5D8C9FC5D0 /* DashboardView.swift in Sources */,
+				F030A51BD2A7A660B21774DB /* GuardModels.swift in Sources */,
+				98C9E49D4E9F89A31050D82C /* GuardViewModel.swift in Sources */,
+				958AD64195C7343C08C370C6 /* ImportView.swift in Sources */,
+				DFA1A40B09E3B9B872320448 /* NotificationService.swift in Sources */,
+				CA0D6C457F1553DEBEA17613 /* PurchaseStore.swift in Sources */,
+				870E9798563C6E57595729F7 /* ReceiptIngestService.swift in Sources */,
+				3A94CA4742A0162D89773944 /* ReceiptParser.swift in Sources */,
+				015BDDA8401B619E4F530DAA /* RiskEngine.swift in Sources */,
+				9E7FB3C333288226C609B9E6 /* SettingsView.swift in Sources */,
+				F0525CFAB6376BC74D7D3511 /* SharePayloadExtractor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8D7C4613A71F27A681B1EB2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				614A401805291D314051F6CF /* AppGroupConstants.swift in Sources */,
+				9B9226A53B74336B722C0422 /* BaselineLearner.swift in Sources */,
+				330D0FAB153BA7BAC8FEB7FB /* GuardModels.swift in Sources */,
+				4013E14B32C7FF23DB4FC602 /* NotificationService.swift in Sources */,
+				A5595B92D39C5A9F1570A1A0 /* PurchaseStore.swift in Sources */,
+				D50B1747B859C60C89118348 /* ReceiptIngestService.swift in Sources */,
+				7279BEFCA2D9C28A814F3B2A /* ReceiptParser.swift in Sources */,
+				D90B7661067C206285EE7E27 /* RiskEngine.swift in Sources */,
+				9B76D304E3604667EC2512CE /* SharePayloadExtractor.swift in Sources */,
+				970400C6D38E9916093ADFA2 /* ShareViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		32E79ED45158455EDDB1F182 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+		37F3589E89D2F76B1AC88CB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = AppleIDGuardShare.entitlements;
+				INFOPLIST_FILE = Sources/ShareExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.skat.appleidguard.share;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3F05D07A0E25C425DD98C6AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+		605DD44CA7DAD6D5E5053FD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AppleIDGuard.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.skat.appleidguard;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8C6BDBFE82CB7FE292C7B03D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = AppleIDGuardShare.entitlements;
+				INFOPLIST_FILE = Sources/ShareExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.skat.appleidguard.share;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		964F1A8718BF1952730300D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AppleIDGuard.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.skat.appleidguard;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0CE4FE337223A54DB1071CF9 /* Build configuration list for PBXNativeTarget "AppleIDGuard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				964F1A8718BF1952730300D9 /* Debug */,
+				605DD44CA7DAD6D5E5053FD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		250B4C13D78A5C2BF7F0FFAE /* Build configuration list for PBXNativeTarget "AppleIDGuardShare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37F3589E89D2F76B1AC88CB5 /* Debug */,
+				8C6BDBFE82CB7FE292C7B03D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		73B0DA72C46C8EC79650C04D /* Build configuration list for PBXProject "AppleIDGuard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32E79ED45158455EDDB1F182 /* Debug */,
+				3F05D07A0E25C425DD98C6AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F3BE4313E06570A616CCB867 /* Project object */;
+}

@@ -1,0 +1,66 @@
+name: AppleIDGuard
+options:
+  bundleIdPrefix: com.skat
+  deploymentTarget:
+    iOS: "17.0"
+
+settings:
+  SWIFT_VERSION: "5.9"
+
+targets:
+  AppleIDGuard:
+    type: application
+    platform: iOS
+    sources:
+      - Sources/AppleIDGuard
+    settings:
+      PRODUCT_BUNDLE_IDENTIFIER: com.skat.appleidguard
+      INFOPLIST_FILE: Info.plist
+      CODE_SIGN_ENTITLEMENTS: AppleIDGuard.entitlements
+    entitlements:
+      path: AppleIDGuard.entitlements
+    info:
+      path: Info.plist
+      properties:
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+        UIBackgroundModes:
+          - fetch
+          - processing
+        BGTaskSchedulerPermittedIdentifiers:
+          - com.skat.appleidguard.refresh
+          - com.skat.appleidguard.processing
+
+  AppleIDGuardShare:
+    type: app-extension
+    platform: iOS
+    sources:
+      - Sources/ShareExtension
+      - path: Sources/AppleIDGuard
+        excludes:
+          - AppleIDGuardApp.swift
+          - Views
+          - Services/GuardViewModel.swift
+          - Services/BackgroundScheduler.swift
+    settings:
+      PRODUCT_BUNDLE_IDENTIFIER: com.skat.appleidguard.share
+      INFOPLIST_FILE: Sources/ShareExtension/Info.plist
+      CODE_SIGN_ENTITLEMENTS: AppleIDGuardShare.entitlements
+    entitlements:
+      path: AppleIDGuardShare.entitlements
+    dependencies:
+      - sdk: Foundation.framework
+      - sdk: UIKit.framework
+      - sdk: UniformTypeIdentifiers.framework
+      - sdk: UserNotifications.framework
+
+schemes:
+  AppleIDGuard:
+    build:
+      targets:
+        AppleIDGuard: all
+        AppleIDGuardShare: all
+    run:
+      config: Debug
+    archive:
+      config: Release
